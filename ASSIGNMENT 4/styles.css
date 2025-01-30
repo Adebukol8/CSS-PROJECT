@@ -1,0 +1,141 @@
+body, h1, p, form, input, select, button {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:arial,San-serif;
+
+}
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background: color #c1c6cbc8;
+    padding:1rem;
+}
+.container{
+    background:#ffffff;
+    border-radius:10px;
+    box-shadow:0 4px, 10px rgba(0,0,0,0.1);
+    max-width:900px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+}
+.form title h1 {
+    font-size:2rem;
+    color:#333;
+    margin-bottom:0.5rem;
+}
+.form-title p{
+    font-size: 1rem;
+    color:#666;
+}
+.form-section {
+    padding:2rem 1.5rem;
+    display:flex;
+    justify-content:center;
+}
+form{
+    width:100%;
+    max-width:500px;
+}
+
+.form-group{
+    margin-bottom:1rem;
+
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:0.5rem;
+    color:#555;
+}
+input,select{
+    width:100%;
+    padding:0.575rem;
+    border:1px solid #ddd;
+    border-radius:5px;
+    font-size:1rem;
+}
+input::placeholder{
+    color:#aaa;
+}
+
+button{
+    width:100%;
+    padding:0.75rem;
+    background-color:#57edd4;
+    color:#ffffff;
+    border:none;
+    border-radius:5px;
+    font-size:1rem;
+    cursor:pointer;
+    font-weight:bold;
+    transition:background-color 0.3s;
+
+}
+button:hover{
+    background-color:#008ecc;
+}
+.disclaimer a{
+    color:#00aaff;
+    text-decoration:none;
+
+}
+.disclaimer a:hover{
+    text-decoration:underline;
+}
+
+
+/*Reponsive media*/
+@media (max-width:1024){
+    .form-title h1 {
+        font-size:1.8rem;
+    }
+    .form-title p{
+        font-size:0.95rem;
+    }
+    .form-section{
+        padding:1.5rem;
+    }
+}
+@media(max-width:768px) {
+    .container{
+        flex-direction:column;
+        padding:1rem;
+    }
+    .form-title h1{
+        font-size:1.6rem;
+    }
+    .font-title p{
+        font-size:0.9rem;
+    }
+    form{
+        max-width:100%;
+    }
+    button{
+        padding:0.65rem;
+    }
+
+
+}
+@media(max-width:480px) {
+    .form-title h1 {
+        font-size:1.4rem;
+    }
+    .form-title p{
+        font-size:0.85rem;
+    }
+    .form-section{
+        padding:1rem;
+    }
+    input,select{
+        padding:0.65rem;
+    }
+    button{
+        font-size:0.9rem;
+    }
+}

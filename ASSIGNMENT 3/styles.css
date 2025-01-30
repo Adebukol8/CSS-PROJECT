@@ -1,0 +1,128 @@
+body {
+    margin:0;
+    background-color:#d3cde6;  /* light lavender background */
+    font-family:Arial, sans-serif;
+    display:flex;
+    align-items: center;
+    padding: 0px;
+    justify-content: center;
+    min-height: 100vh;
+    
+
+}
+.card-background{
+    width:450px;
+    padding:20px;
+    background-color: #d3d3ed ;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin:20px auto;
+    border-radius: 0 10px 20px rgba(0,0,0,0.1.5)
+}
+.card {
+    position:relative;
+    overflow:hidden;
+    text-align: center;
+    padding:20px;
+    border-radius: 15px;
+    width:350px;
+    box-shadow: 0 8px 16px  rgba(0,0,0,0.2);
+    background-color:#fff;
+}
+.badge{
+    position:absolute;
+    top:10px;
+    left:15px;
+    border-radius:12px;
+    color:#333333;
+    font-size: 0.9em;
+    font-weight:bold;
+    padding:5px 10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    background-color: #ffe084;
+    z-index: 1;
+
+}
+
+ .watch-img {
+    width:100%;
+    height:auto;
+    
+ }
+ .card-content {
+    padding:20px;
+    
+ }
+ .card-title{
+    font-size:1.5em;
+    font-weight:bold;
+    margin:10px 0;
+    color:#333;
+ }
+ .card-title span {
+    font-size:0.8em;
+    color:#777;
+    font-weight:normal;
+
+ }
+ 
+
+ 
+ 
+.card-description {
+    font-size:0.9em;
+    color:#555;
+    line-height:1.5;
+}
+
+/* Responsive media */
+@media(min-width:1024px){
+    .card-background{
+        width:600px;
+        padding:30px;
+    }
+    .card{
+        width:550px;
+        padding:30px;
+    }
+    .card-title{
+        font-size:2em;
+    }
+    .card-description{
+        font-size:1em;
+    }
+}
+ @media(min-width:768px){
+    .card-background{
+        width:500px;
+        padding:25px;
+    }
+    .card{
+        width:450px;
+        padding:25px;
+    }
+    .card-title{
+        font-size:1.8em;
+    }
+    .card-description{
+        font-size:0.95em;
+    }
+ }
+ @media(max-width:480){
+    .card-background{
+        width:90%;
+        padding:20px;
+    }
+    .card{
+        width:100%;
+        padding:20px;
+    }
+    .card-title{
+        font-size:1.5em;
+    }
+    .card-description{
+        font-size:0.9em;
+    }
+ }
